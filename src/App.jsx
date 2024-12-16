@@ -3,7 +3,7 @@ import "./App.css";
 import Logo from "/public/logo.svg";
 import Input from "/public/input.svg";
 import Add from "/public/Button.svg";
-import Sort from "/punblic/Sort.svg";
+import Sort from "/public/Sort.svg";
 import Edit from "/public/Edit.svg";
 import Delete from "/public/Delete.svg";
 import More from "/public/More.svg";
@@ -119,7 +119,7 @@ function App() {
         </div>
       </div>
 
-      {res.length > 0 &&
+      {res.length > 0 ? (
         res.map(function (value, index) {
           return (
             <div
@@ -164,15 +164,18 @@ function App() {
                     <h2>{!value.active ? "INACTIVE" : "ACTIVE"}</h2>
                   </div>
                   <div className="user-options">
-                    <img src={Edit} alt="Edit Icon" />
-                    <img src={Delete} alt="Delete Icon" />
-                    <img src={More} alt="More Icon" />
+                    <img src={Edit} alt="Edit" />
+                    <img src={Delete} alt="Delete" />
+                    <img src={More} alt="More" />
                   </div>
                 </div>
               </div>
             </div>
           );
-        })}
+        })
+      ) : (
+        <p className="no-users">No Users Added</p>
+      )}
 
       {isModalOpen && (
         <div className="modal-overlay">
