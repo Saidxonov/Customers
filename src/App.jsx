@@ -5,7 +5,7 @@ import Input from "/public/input.svg";
 import Add from "/public/Button.svg";
 import Sort from "/public/Sort.svg";
 import Edit from "/public/Edit.svg";
-import Delete from "/public/Delete.svg";
+import Delete from "/public/delete-icon.svg";
 import More from "/public/More.svg";
 
 function App() {
