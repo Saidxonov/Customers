@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Logo from "/public/logo.svg";
-import Input from "/public/input.svg";
+import Input from "/public/search.svg";
 import Add from "/public/Button.svg";
 import Sort from "/public/Sort.svg";
 import Edit from "/public/Edit.svg";
