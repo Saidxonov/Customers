@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
-import Logo from "/public/logo.svg";
-import Input from "/public/search.svg";
-import Add from "/public/Button.svg";
-import Sort from "/public/Sort.svg";
-import Edit from "/public/Edit.svg";
-import Delete from "/public/delete-icon.svg";
-import More from "/public/More.svg";
+import Logo from "./images/logo.svg";
+import Input from "./images/search.svg";
+import Add from "./images/Button.svg";
+import Sort from "./images/Sort.svg";
+import Edit from "./images/Edit.svg";
+import Delete from "./images/delete-icon.svg";
+import More from "./images/More.svg";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
